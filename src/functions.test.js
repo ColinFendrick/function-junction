@@ -82,18 +82,32 @@ function isVowel (p) {
  * return the string "tothohisos isos fofunon".
  */
 
+// function rovarspraket (text) {
+//   let string = text.toString()
+//   let consonants = 'bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ'.split('')
+//   let place = ''
+//   for (let i = 0; i < string.length; i++) {
+//     if (consonants.indexOf(string.charAt(i)) >= 0) {
+//       place += string.charAt(i) + 'o' + string.charAt(i)
+//     } else {
+//       place += string.charAt(i)
+//     }
+//   }
+//   return place
+// }
+
 function rovarspraket (text) {
   let string = text.toString()
   let consonants = 'bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ'.split('')
-  let place = ''
+  let newWord = ''
   for (let i = 0; i < string.length; i++) {
-    if (consonants.indexOf(string.charAt(i)) >= 0) {
-      place += string.charAt(i) + 'o' + string.charAt(i)
+    if (consonants.includes(string[i])) {
+      newWord += string[i] + 'o' + string[i]
     } else {
-      place += string.charAt(i)
+      newWord += string[i]
     }
   }
-  return place
+  return newWord
 }
 
 /**

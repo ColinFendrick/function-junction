@@ -32,12 +32,20 @@ function max (x, y) {
  * numbers as arguments and returns the largest of them.
  */
 
+// function maxOfThree (x, y, z) {
+//   let answer = Math.max(x, y, z)
+//   if (isNaN(answer)) {
+//     return z //yes I know this is cheating I looked at your test and I don't want to code more I'm tired
+//   } else {
+//     return answer
+//   }
+// }
+
 function maxOfThree (x, y, z) {
-  let answer = Math.max(x, y, z)
-  if (isNaN(answer)) {
-    return z //yes I know this is cheating I looked at your test and I don't want to code more I'm tired
+  if (Math.max(x, y, z)) {
+    return Math.max(x, y, z)
   } else {
-    return answer
+    return Math.max(x, y) || Math.max(x, z) || Math.max(y, z) || Math.max(x) || Math.max(y) || Math.max(z)
   }
 }
 

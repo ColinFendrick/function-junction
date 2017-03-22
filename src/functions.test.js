@@ -13,17 +13,10 @@
 // }
 
 function max (x, y) {
-  if (!isNaN(x) && !isNaN(y)) {
+  if (Math.max(x, y)) {
     return Math.max(x, y)
-  }
-  else if (!isNaN(x) && isNaN(y)) {
-    return x
-  }
-  else if (isNaN(x) && !isNaN(y)) {
-    return y
-  }
-  else {
-    return undefined
+  } else {
+    return Math.max(x) || Math.max(y)
   }
 }
 

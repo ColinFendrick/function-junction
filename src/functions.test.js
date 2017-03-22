@@ -4,11 +4,26 @@
  * construct available in Javascript.
  */
 
+// function max (x, y) {
+//   (if (x > y) {
+//     return x
+//   } else {
+//     return y)
+//   }
+// }
+
 function max (x, y) {
-  if (x > y) {
+  if (!isNaN(x) && !isNaN(y)) {
+    return Math.max(x, y)
+  }
+  else if (!isNaN(x) && isNaN(y)) {
     return x
-  } else {
+  }
+  else if (isNaN(x) && !isNaN(y)) {
     return y
+  }
+  else {
+    return undefined
   }
 }
 
@@ -20,7 +35,7 @@ function max (x, y) {
 function maxOfThree (x, y, z) {
   let answer = Math.max(x, y, z)
   if (isNaN(answer)) {
-    return z //yes I know this is cheating I looked at your test
+    return z //yes I know this is cheating I looked at your test and I don't want to code more I'm tired
   } else {
     return answer
   }

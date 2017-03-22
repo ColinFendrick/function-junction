@@ -13,11 +13,7 @@
 // }
 
 function max (x, y) {
-  if (Math.max(x, y)) {
-    return Math.max(x, y)
-  } else {
-    return Math.max(x) || Math.max(y)
-  }
+  return Math.max(x, y) || Math.max(x) || Math.max(y)
 }
 
 /**
@@ -35,11 +31,7 @@ function max (x, y) {
 // }
 
 function maxOfThree (x, y, z) {
-  if (Math.max(x, y, z)) {
-    return Math.max(x, y, z)
-  } else {
-    return Math.max(x, y) || Math.max(x, z) || Math.max(y, z) || Math.max(x) || Math.max(y) || Math.max(z)
-  }
+  return Math.max(x, y, z) || Math.max(x, y) || Math.max(x, z) || Math.max(y, z) || Math.max(x) || Math.max(y) || Math.max(z)
 }
 
 /*

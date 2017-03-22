@@ -117,14 +117,12 @@ function rovarspraket (text) {
  * string "books".
  */
 
-function reverseOld (str) {
-  let split = str.split('')
-  let reverse = split.reverse()
-  let answer = reverse.join('')
-  return answer
-}
-
-reverseOld('abc')
+// function reverseOld (str) {
+//   let split = str.split('')
+//   let reverse = split.reverse()
+//   let answer = reverse.join('')
+//   return answer
+// }
 
 function reverse (str) {
   let answer = ''
